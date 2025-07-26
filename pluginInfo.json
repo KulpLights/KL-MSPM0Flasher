@@ -1,0 +1,18 @@
+{
+	"repoName": "KL-MSPM0Flasher",
+	"name": "KulpLights MSPM0Flasher",
+	"author": "Daniel Kulp (dan@kulp.com)",
+	"description": "Flashes MSPM0xx devices with the KulpLights firmware.",
+	"homeURL": "https://github.com/KulpLights/KL-MSPM0Flasher",
+	"srcURL": "https://github.com/KulpLights/KL-MSPM0Flasher.git",
+	"bugURL": "https://github.com/KulpLights/KL-MSPM0Flasher/issues",
+	"versions": [
+		{
+			"minFPPVersion": "9.0",
+			"maxFPPVersion": "0",
+			"branch": "master",
+			"allowUpdates": 1,
+			"sha": ""
+		}
+	]
+}

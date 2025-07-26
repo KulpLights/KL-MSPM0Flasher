@@ -1,0 +1,16 @@
+{
+    "init": [        
+    ],
+    "steps": [
+        {
+            "action": "flashMSPM0",
+            "nrst": "FPPRESET",
+            "binvoke": "BInvoke",
+            "firmware": "-erase-",
+            "skipVendorImage": true,
+            "message": "Erase MSPM0-1"
+        }
+    ],
+    "cleanup": [
+    ]
+}
