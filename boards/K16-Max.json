@@ -18,14 +18,6 @@
                     "message": "GPIO Exp"
                 },
                 {
-                    "address": "0x23",
-                    "message": "GPIO Exp"
-                },
-                {
-                    "address": "0x24",
-                    "message": "GPIO Exp"
-                },
-                {
                     "address": "0x51",
                     "message": "RTC"
                 },
@@ -48,21 +40,8 @@
             "comment": "Invokes the set_cape_sn_in_eeprom script to create the EEPROM with the current cape serial number.",
             "message": "Generate EEPROM",
             "action": "generateEEPROM",
-            "source": "K32-Max-eeprom.bin",
+            "source": "K16-Max-eeprom.bin",
             "target": "/tmp/eeprom.bin"
-        },
-        {
-            "action": "flashMSPM0",
-            "nrst": "pca9675-0",
-            "binvoke": "pca9675-2",
-            "firmware": "mspm0-adc.txt",
-            "skipVendorImage": true,
-            "message": "Flash MSPM0-2",
-            "i2cDev": "0x50"
-        },
-        {
-            "action": "wait",
-            "time": 250
         },
         {
             "action": "flashMSPM0",
@@ -71,8 +50,14 @@
             "eeprom": "/tmp/eeprom.bin",
             "firmware": "mspm0-adc-eeprom.txt",
             "skipVendorImage": false,
-            "message": "Flash MSPM0-1",
-            "i2cDev": "0x50"
+            "message": "Flash MSPM0-1"
+        },
+        {
+            "skip": true,
+            "comment": "Set the RTC to the current time.  Note: if no battery is present, the RTC will not keep the time.",
+            "action": "setRTC",
+            "device": "pcf85363",
+            "message": "Set RTC Time"
         },
         {
             "message": "Validate I2C",
@@ -85,10 +70,6 @@
                 },
                 {
                     "address": "0x28",
-                    "message": "A2D"
-                },
-                {
-                    "address": "0x29",
                     "message": "A2D"
                 }
             ]
