@@ -6,6 +6,7 @@
     "homeURL": "https://github.com/KulpLights/KL-MSPM0Flasher",
     "srcURL": "https://github.com/KulpLights/KL-MSPM0Flasher.git",
     "bugURL": "https://github.com/KulpLights/KL-MSPM0Flasher/issues",
+    "iconURL": "https://raw.githubusercontent.com/KulpLights/KL-MSPM0Flasher/main/icon.png",
     "versions": [
         {
             "minFPPVersion": "9.0",
