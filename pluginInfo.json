@@ -1,18 +1,18 @@
 {
-	"repoName": "KL-MSPM0Flasher",
-	"name": "KulpLights MSPM0Flasher",
-	"author": "Daniel Kulp (dan@kulp.com)",
-	"description": "Flashes MSPM0xx devices with the KulpLights firmware.",
-	"homeURL": "https://github.com/KulpLights/KL-MSPM0Flasher",
-	"srcURL": "https://github.com/KulpLights/KL-MSPM0Flasher.git",
-	"bugURL": "https://github.com/KulpLights/KL-MSPM0Flasher/issues",
-	"versions": [
-		{
-			"minFPPVersion": "9.0",
-			"maxFPPVersion": "0",
-			"branch": "main",
-			"allowUpdates": 1,
-			"sha": ""
-		}
-	]
+    "repoName": "KL-MSPM0Flasher",
+    "name": "KulpLights Cape Programmer",
+    "author": "Daniel Kulp (dan@kulp.com)",
+    "description": "Reprograms the monitoring chip that carries a Kulp Lights cape's eeprom, for the rare board that leaves the factory without it and so is not detected by FPP at all.",
+    "homeURL": "https://github.com/KulpLights/KL-MSPM0Flasher",
+    "srcURL": "https://github.com/KulpLights/KL-MSPM0Flasher.git",
+    "bugURL": "https://github.com/KulpLights/KL-MSPM0Flasher/issues",
+    "versions": [
+        {
+            "minFPPVersion": "9.0",
+            "maxFPPVersion": "0",
+            "branch": "main",
+            "allowUpdates": 1,
+            "sha": ""
+        }
+    ]
 }

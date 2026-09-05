@@ -1,0 +1,6 @@
+{
+    "eepromBase": "https://kulplights.com/firmwares",
+    "instructionsDir": "%BASE%/programmer/instructions",
+    "programmerBase": "%BASE%/programmer",
+    "cacheDir": "cache"
+}
